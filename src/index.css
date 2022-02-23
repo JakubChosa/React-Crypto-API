@@ -4,6 +4,12 @@
 body {
   margin: 0;
   background:#0B2434;
+  min-height: 100vh;
+  background-image: url('images/blockchain.jpg');
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -37,7 +43,7 @@ nav {
 }
 /* Home Page */
 main{
-  padding:2em;
+  padding:4em;
   max-width: 100vw;
   margin: 0 auto;
   display: flex;
