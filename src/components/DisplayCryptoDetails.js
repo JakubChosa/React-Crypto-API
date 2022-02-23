@@ -21,6 +21,7 @@ export default function DisplayCryptoDetails(props) {
     priceChangeFormat = 3
   }
 
+
   return (
       <div className="crypto-details">
         <button className="go-back-btn" onClick={() => navigate(-1)}>
