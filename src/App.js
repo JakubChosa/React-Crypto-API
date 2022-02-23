@@ -5,6 +5,7 @@ import Main from './pages/Main'
 import ErrorPage from './pages/ErrorPage'
 import CryptoDetails from './pages/CryptoDetails'
 
+
 export default function App() {
   const [cryptocurrencies, setCryptocurrencies] = React.useState([])
   const [error, setError] = React.useState(false)
@@ -32,13 +33,13 @@ export default function App() {
       <Navbar />
       {error && <ErrorPage />}
       <Routes>
-        <Route path="jakubchosa.github.io/React-Crypto-API/"
+        <Route path="/React-Crypto-API"
           element={<Main cryptocurrencies={cryptocurrencies} />}>
         </Route>
-        <Route path="jakubchosa.github.io/React-Crypto-API/:cryptoId"
+        <Route path="/React-Crypto-API/:cryptoId"
           element={<CryptoDetails />}
         />
-      <Route path="jakubchosa.github.io/React-Crypto-API/*" element={<ErrorPage />} />
+      <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>
   )
