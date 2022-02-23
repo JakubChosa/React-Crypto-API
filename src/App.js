@@ -32,10 +32,10 @@ export default function App() {
       <Navbar />
       {error && <ErrorPage />}
       <Routes>
-        <Route path="React-Crypto-API/"
+        <Route path="/React-Crypto-API"
           element={<Main cryptocurrencies={cryptocurrencies} />}>
         </Route>
-        <Route path="React-Crypto-API/:cryptoId"
+        <Route path="/React-Crypto-API/:cryptoId"
           element={<CryptoDetails />}
         />
       <Route path="*" element={<ErrorPage />} />
