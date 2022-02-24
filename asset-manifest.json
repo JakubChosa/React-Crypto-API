@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/React-Crypto-API/static/css/main.2fe3bcfe.css",
-    "main.js": "/React-Crypto-API/static/js/main.6cef594e.js",
+    "main.css": "/React-Crypto-API/static/css/main.1c4de049.css",
+    "main.js": "/React-Crypto-API/static/js/main.0bcfafaf.js",
+    "static/media/blockchain.jpg": "/React-Crypto-API/static/media/blockchain.52bb75f9bc0bdfb59e35.jpg",
     "index.html": "/React-Crypto-API/index.html",
-    "main.2fe3bcfe.css.map": "/React-Crypto-API/static/css/main.2fe3bcfe.css.map",
-    "main.6cef594e.js.map": "/React-Crypto-API/static/js/main.6cef594e.js.map"
+    "main.1c4de049.css.map": "/React-Crypto-API/static/css/main.1c4de049.css.map",
+    "main.0bcfafaf.js.map": "/React-Crypto-API/static/js/main.0bcfafaf.js.map"
   },
   "entrypoints": [
-    "static/css/main.2fe3bcfe.css",
-    "static/js/main.6cef594e.js"
+    "static/css/main.1c4de049.css",
+    "static/js/main.0bcfafaf.js"
   ]
 }
