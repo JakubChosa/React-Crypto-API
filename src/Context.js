@@ -4,7 +4,7 @@ const Context = React.createContext()
 
 function ContextProvider({children}){
   const [cryptocurrencies, setCryptocurrencies] = useState('')
-  const [favoriteCryptocurrencies, setFavoriteCryptocurrencies] = useState(null)
+  const [favoriteCryptocurrencies, setFavoriteCryptocurrencies] = useState([])
   const [error, setError] = useState(false)
 
   useEffect(()=> {

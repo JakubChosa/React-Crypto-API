@@ -28,9 +28,12 @@ export default function Main(props) {
       </Link>
     ))
   }
-
-  const favoriteTitle = favoriteCryptocurrencies.length > 0 ? "Your favorite major cryptocurrencies" :
-  "You don't have any favorites yet, go to main page and add some by clicking on star"
+  let favoriteTitle
+  if(favoriteCryptocurrencies || favoriteCryptocurrencies.length > 0){
+    favoriteTitle = "You don't have any favorites yet, go to main page and add some by clicking on star"
+  } else {
+    favoriteTitle = "Your favorite major cryptocurrencies"
+  }
 
   return (
     <main>
