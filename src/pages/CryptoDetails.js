@@ -26,7 +26,7 @@ export default function CryptoDetailedInfo() {
    },[cryptoId])
 
   return (
-    <main >
+    <main>
       {error && <ErrorPage />}
       {!crypto && !error && <h2 className="loading">Loading...</h2>}
       {crypto && <DisplayCryptoDetails crypto={crypto} />}

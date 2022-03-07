@@ -1,5 +1,5 @@
 import React from 'react';
-import {useNavigate} from "react-router-dom"
+import {useNavigate} from "react-router-dom";
 
 export default function DisplayCryptoDetails(props) {
   const navigate = useNavigate()
@@ -47,13 +47,13 @@ export default function DisplayCryptoDetails(props) {
         <h2 className="crypto-details-name">{crypto.name}</h2>
 
         <div className="bottom-details-wrapper">
-          <p>24h-high🡹:
+          <p>24h-high:
             <span className="important-text">{` ${crypto.market_data.high_24h.usd}$`}</span>
           </p>
           <p>Price:
             <span style={styles} className="important-text">{` ${crypto.market_data.current_price.usd}$`}</span>
           </p>
-          <p>24h-low🡻:
+          <p>24h-low:
             <span className="important-text">{` ${crypto.market_data.low_24h.usd}$`}</span>
           </p>
         </div>
