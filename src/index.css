@@ -273,6 +273,7 @@ input {
   .crypto-details-name{
     order: -1;
     font-size: 1.8rem;
+    margin: 0.8em 0;
   }
   .top-details-wrapper{
     margin: 1em 0;

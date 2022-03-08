@@ -29,7 +29,7 @@ export default function Main(props) {
     ))
   }
   let favoriteTitle
-  if(favoriteCryptocurrencies || favoriteCryptocurrencies.length > 0){
+  if(!favoriteCryptocurrencies || favoriteCryptocurrencies.length < 1){
     favoriteTitle = "You don't have any favorites yet, go to main page and add some by clicking on star"
   } else {
     favoriteTitle = "Your favorite major cryptocurrencies"
@@ -59,7 +59,7 @@ export default function Main(props) {
           <Link
             className="crypto-search-btn"
             key={crypto.symbol}
-            to={`/React-Crypto-API/favorite/${searchApi}`}>Search
+            to={`/React-Crypto-API/favorite/${searchApi.toLowerCase()}`}>Search
           </Link>
         </div>
       </div>

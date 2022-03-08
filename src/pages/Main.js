@@ -7,7 +7,7 @@ import ErrorPage from './ErrorPage'
 export default function Main() {
   const {cryptocurrencies, error} = useContext(Context)
   const [cryptoSearch, setCryptoSearch] = useState('')
-  
+
   function searchChange(e){
         const {value} = e.target
         setCryptoSearch(value)
@@ -49,7 +49,6 @@ export default function Main() {
      </div>
      {error && <ErrorPage />}
      {cryptocurrencies.length < 1 && !error && <h2 className="loading">Loading...</h2>}
-     {!cryptocurrencies && <h2 className="loading">Loading...</h2>}
      <div className="container">
        {cryptoElements}
      </div>
